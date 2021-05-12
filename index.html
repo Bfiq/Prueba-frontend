@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <title>Prueba</title>
+</head>
+<body>
+        <nav class="b-nav">
+            <div class="d1nav">
+                 <ul class="li-nav"><a class="nav-a">Inicio</a></ul>
+                 <ul class="li-nav"><a class="nav-a">Estadisticas</a></ul>
+            </div>
+        </nav>
+
+        <section class="sect-top">
+            
+            <div class="top-cuadro-sbb ">
+                <h3 class="title-cuadro ">Volumen total del trafico del mes:</h3>
+            </div>
+            
+            <div class="cuadro-ext">
+                <div class="fond-cuadro">
+                    <div class="top-cuadro ">
+                        <h6 class="title-cuadro ">Total de sesiones</h6>
+                    </div>
+                    <div class="bot-cuadro">
+                    
+                        <center><h2 class="title-cuadro">576282</h2></center> <!--Agregar variable a mostrar-->
+                        
+                    </div>
+                </div>
+                <div class="fond-cuadro">
+                    <div class="top-cuadro ">
+                        <h6 class="title-cuadro "># de paginas por sesión</h6>
+                    </div>
+                    <div class="bot-cuadro">
+                    
+                        <center><h2 class="title-cuadro">4.2</h2></center> <!--Agregar variable a mostrar-->
+                        
+                    </div>
+                </div>
+                <div class="fond-cuadro">
+                    <div class="top-cuadro ">
+                        <h6 class="title-cuadro ">Usuarios Unicos</h6>
+                    </div>
+                    <div class="bot-cuadro">
+                    
+                        <center><h2 class="title-cuadro">2167898</h2></center> <!--Agregar variable a mostrar-->
+                        
+                    </div>
+                </div>
+                <div class="fond-cuadro">
+                    <div class="top-cuadro ">
+                        <h6 class="title-cuadro ">Tiempo medio por sesión</h6>
+                    </div>
+                    <div class="bot-cuadro">
+                    
+                        <center><h2 class="title-cuadro">1:01:51</h2></center> <!--Agregar variable a mostrar-->
+                        
+                    </div>
+                </div>
+            </div>    
+            <canvas id="g-sesionesvsusuariosunicos" width="400" height="350"></canvas>
+        </section>
+        <section class="sect-top">
+            <canvas id="g-sesionesvsusuariosunicos" width="400" height="350"></canvas>
+        </section>
+</body> 
+<script>
+    let Canvasn1 = document.getElementById("g-sesionesvsusuariosunicos").getContext("2d");
+
+    var chartn1 = new Chart(Canvasn1,{
+        type:"",
+        data:{
+            labels:["Enero","Febrero","Marzo"],
+            datasets:[
+                {
+                    label:"Sesiones vs Usuarios unicos",
+                    data:[100000,200000,124568]
+                }
+            ]
+        }
+    })
+</script>
+</html>
