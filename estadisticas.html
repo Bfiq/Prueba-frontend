@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js'></script>
+    <link href="estilos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="icono.png" />
+    <title>Estadisticas</title>
+</head>
+<body>
+    <nav class="b-nav">
+        <div class="d1nav">
+             <ul class="li-nav">
+                <li><a class="nav-a na" href="index.html">General</a></li> <!--hacerlas funcionar-->
+                <li><a class="nav-a na" href="estadisticas.html">Mas Estadisticas</a></li>
+                <li><a class="nav-a nb" href="#">Usuario</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br/>
+    <br/>
+    <div id="table_div"></div>
+    <section class="sect-top2">
+            <!--Graficas-->
+        <div class="cuadro-ext ce2">    
+            <div class="fond-cuadro fond1">
+                <div class="top-cuadro tc2">
+                    <h3 class="title-cuadro ">Cursos mas visitados este mes</h3>
+                </div>
+                <div class="bot-cuadro">
+                    <table class="default">
+                        <tr>
+                            <th>#</th>
+                            <th>Curso</th>
+                            <th>Visitas</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>3123</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>B</td>
+                            <td>4456</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>c</td>
+                            <td>1928</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>d</td>
+                            <td>9238</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>e</td>
+                            <td>8263</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>f</td>
+                            <td>8263</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>g</td>
+                            <td>8263</td>
+                        </tr>
+                      </table><!--Agregar variables a mostrar-->
+                    
+                </div>
+            </div>
+            <div class="divext">
+                    <div class="fond-cuadro fond3">
+                        <div class="top-cuadro tc">
+                            <h5 class="title-cuadro ">% de rebote</h5>
+                        </div>
+                        <div class="bot-cuadro">
+                            <br/>
+                            <h4 class="title-cuadro">-13,51134665</h4> <!--Agregar variable a mostrar-->   
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond3">
+                        <div class="top-cuadro tc">
+                            <h5 class="title-cuadro ">% de sesiones</h5>
+                        </div>
+                        <div class="bot-cuadro">
+                            <br/>
+                            <h4 class="title-cuadro">-4,156826482</h4> <!--Agregar variable a mostrar-->
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond3">
+                        <div class="top-cuadro tc">
+                            <h5 class="title-cuadro ">% de Usuarios unicos</h5>
+                        </div>
+                        <div class="bot-cuadro">
+                            <br/>
+                            <h4 class="title-cuadro">-0,964367291</h4> <!--Agregar variable a mostrar-->
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond3">
+                        <div class="top-cuadro tc">
+                            <h5 class="title-cuadro ">% de sesiones nuevas</h5>
+                        </div>
+                        <div class="bot-cuadro">
+                            <br/>
+                            <h4 class="title-cuadro">11</h4> <!--Agregar variable a mostrar-->
+                        </div>
+                    </div>
+            </div>    
+        </div>    
+    </section>
+    <br/>
+    <br/>
+    <section class="sect-top2">
+        <div class="cuadro-ext ce2"> 
+            <div class="fond-cuadro fond1 fc1">
+                <div class="top-cuadro tc2">
+                    <h3 class="title-cuadro ">Controles de trafico a lo largo de los meses</h3>
+                </div>
+                <div class="bot-cuadro">  
+
+                    <canvas id="g-SvsUU"></canvas><!--Agregar variable a mostrar-->
+
+                </div>
+            </div>
+        </div>    
+    </section>
+      
+</body>
+<script src="graficasest.js"></script>
+</html>

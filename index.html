@@ -4,85 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/estilos.css" rel="stylesheet" />
-    <title>Prueba</title>
+    <link href="estilos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="icono.png" /><!--Poner Icono-->
+    <title>General</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js'></script>
 </head>
 <body>
         <nav class="b-nav">
-            <div class="d1nav">
-                 <ul class="li-nav"><a class="nav-a">Inicio</a></ul>
-                 <ul class="li-nav"><a class="nav-a">Estadisticas</a></ul>
+            <div >
+                 <ul class="li-nav">
+                    <li><a class="nav-a na" href="index.html">General</a></li> 
+                    <li><a class="nav-a na" href="estadisticas.html">Mas Estadisticas</a></li>
+                    <li><a class="nav-a nb" href="#">Usuario</a></li><!--Variable Nombre del Usuario-->
+                </ul>
             </div>
         </nav>
-
+        <br/>
+        <br/>
         <section class="sect-top">
-            
-            <div class="top-cuadro-sbb ">
-                <h3 class="title-cuadro ">Volumen total del trafico del mes:</h3>
+            <div>
+                <div class="top-cuadro-sbb tc2">
+                    <h3 class="title-cuadro ">Volumen total del trafico del mes:</h3>
+                </div>
+                
+                <div class="cuadro-ext ce1">
+                    <div class="fond-cuadro fond2">
+                        <div class="top-cuadro tc">
+                            <h6 class="title-cuadro ">Total de sesiones</h6>
+                        </div>
+                        <div class="bot-cuadro">
+                        
+                            <center><h2 class="title-cuadro">576282</h2></center> <!--Agregar variable a mostrar-->
+                            
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond2">
+                        <div class="top-cuadro tc">
+                            <h6 class="title-cuadro "># de paginas por sesión</h6>
+                        </div>
+                        <div class="bot-cuadro">
+                        
+                            <center><h2 class="title-cuadro">4.2</h2></center> <!--Agregar variable a mostrar-->
+                            
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond2">
+                        <div class="top-cuadro tc">
+                            <h6 class="title-cuadro ">Usuarios Unicos</h6>
+                        </div>
+                        <div class="bot-cuadro">
+                        
+                            <center><h2 class="title-cuadro">216789</h2></center> <!--Agregar variable a mostrar-->
+                            
+                        </div>
+                    </div>
+                    <div class="fond-cuadro fond2">
+                        <div class="top-cuadro tc">
+                            <h6 class="title-cuadro ">Tiempo medio por sesión</h6>
+                        </div>
+                        <div class="bot-cuadro">
+                        
+                            <center><h2 class="title-cuadro">1:01:51</h2></center> <!--Agregar variable a mostrar-->
+                            
+                        </div>
+                    </div>
+                </div>    
             </div>
-            
-            <div class="cuadro-ext">
-                <div class="fond-cuadro">
-                    <div class="top-cuadro ">
-                        <h6 class="title-cuadro ">Total de sesiones</h6>
+        </section>
+        <br/>
+        <br/>
+        <section class="sect-top2">
+                <!--Graficas-->
+            <div class="cuadro-ext ce2">    
+                <div class="fond-cuadro fond1 fc2">
+                    <div class="top-cuadro tc2">
+                        <h3 class="title-cuadro ">Sesiones vs Usuarios unicos por mes</h3>
                     </div>
                     <div class="bot-cuadro">
-                    
-                        <center><h2 class="title-cuadro">576282</h2></center> <!--Agregar variable a mostrar-->
+                       
+                        <canvas  id="g-sesionesvsusuariosunicos"></canvas> <!--Agregar variable a mostrar-->
                         
                     </div>
                 </div>
-                <div class="fond-cuadro">
-                    <div class="top-cuadro ">
-                        <h6 class="title-cuadro "># de paginas por sesión</h6>
+                <div class="fond-cuadro fond1 fc2">
+                    <div class="top-cuadro tc2">
+                        <h3 class="title-cuadro ">Canales de Trafico</h3>
                     </div>
                     <div class="bot-cuadro">
                     
-                        <center><h2 class="title-cuadro">4.2</h2></center> <!--Agregar variable a mostrar-->
-                        
-                    </div>
-                </div>
-                <div class="fond-cuadro">
-                    <div class="top-cuadro ">
-                        <h6 class="title-cuadro ">Usuarios Unicos</h6>
-                    </div>
-                    <div class="bot-cuadro">
-                    
-                        <center><h2 class="title-cuadro">2167898</h2></center> <!--Agregar variable a mostrar-->
-                        
-                    </div>
-                </div>
-                <div class="fond-cuadro">
-                    <div class="top-cuadro ">
-                        <h6 class="title-cuadro ">Tiempo medio por sesión</h6>
-                    </div>
-                    <div class="bot-cuadro">
-                    
-                        <center><h2 class="title-cuadro">1:01:51</h2></center> <!--Agregar variable a mostrar-->
+                        <canvas id="g-CTrafico"></canvas><!--Agregar variable a mostrar-->
                         
                     </div>
                 </div>
             </div>    
-            <canvas id="g-sesionesvsusuariosunicos" width="400" height="350"></canvas>
-        </section>
-        <section class="sect-top">
-            <canvas id="g-sesionesvsusuariosunicos" width="400" height="350"></canvas>
-        </section>
+        </section>      
 </body> 
-<script>
-    let Canvasn1 = document.getElementById("g-sesionesvsusuariosunicos").getContext("2d");
-
-    var chartn1 = new Chart(Canvasn1,{
-        type:"",
-        data:{
-            labels:["Enero","Febrero","Marzo"],
-            datasets:[
-                {
-                    label:"Sesiones vs Usuarios unicos",
-                    data:[100000,200000,124568]
-                }
-            ]
-        }
-    })
-</script>
+<script src="graficas.js"></script>
 </html>
