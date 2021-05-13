@@ -1,5 +1,5 @@
-var ctx = document.getElementById('g-sesionesvsusuariosunicos').getContext('2d');
-var myChart = new Chart(ctx, {
+var idhtml = document.getElementById('g-sesionesvsusuariosunicos').getContext('2d');
+var g_barras = new Chart(idhtml, {
   type: 'bar',
   data: {
     labels:  ['Ene.', 'Feb.', 'Mar.', 'Abr.', 'May.', 'Jun.', 'Jul.','Ago.'],
@@ -17,14 +17,14 @@ var myChart = new Chart(ctx, {
   }
 });
 
-var ctx = document.getElementById('g-CTrafico').getContext('2d');
-var myChart = new Chart(ctx, {
+var idhtml = document.getElementById('g-CTrafico').getContext('2d');
+var g_dona = new Chart(idhtml, {
   type: 'doughnut',
   data: {
     labels: ['Directas', 'Organicas', 'Sociales', 'Email', 'Referenciales'],
     datasets: [{
       label: 'apples',
-      data: [12, 19, 3, 17, 6],    //agregar datos
+      data: [12, 19, 3, 17, 6],    //agregar datos de JSON
       backgroundColor: [
         "#2ecc71",
         "#3498db",

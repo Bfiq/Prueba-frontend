@@ -18,6 +18,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,15 +32,14 @@ ul {
 }
 
 .nb{
-    position: static;
     float: right;
 }
 
 .sect-top{
-    block-size: 200px;
+    block-size: 100%;
     width: 90%;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 1;   
@@ -91,7 +91,7 @@ ul {
 }
 
 .fond2{ 
-    block-size: 80%;
+    block-size: 100%;
     width: 20%;
     border: 1px solid #000000;
     margin-bottom: 1.5rem ;
@@ -123,10 +123,11 @@ ul {
 
 .top-cuadro-sbb{
     padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
+    margin: auto;
     background-color: #14EC84;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    block-size: 10%;
 }
 
 .bot-cuadro{
@@ -139,7 +140,7 @@ ul {
     margin: 0;
     font-weight: bold;
     font-size: 10%;
-    color: #000000;
+    color: #000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -149,7 +150,7 @@ h5.title-cuadro{
 }
 
 h6.title-cuadro{
-    font-size: 13px;
+    font-size: 70%;
 }
 
 h3.title-cuadro{
@@ -158,7 +159,7 @@ h3.title-cuadro{
 }
 
 h2.title-cuadro{
-    font-size: 25px;
+    font-size: 100%;
 }
 
 h4.title-cuadro{
@@ -191,4 +192,11 @@ th{
     grid-template-columns: 1fr 1fr ;
     flex-direction: row;
     width: 47%;
+}
+
+#ts,#npxs{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 107%;
 }
